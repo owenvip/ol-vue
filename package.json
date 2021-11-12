@@ -14,9 +14,9 @@
   "scripts": {
     "dev": "vue-cli-service serve dev/serve.ts",
     "build": "cross-env NODE_ENV=production rollup -c --format es --file index.js",
-    "lint": "eslint ./src --ext=.vue --fix",
+    "lint": "eslint ./src --ext=.vue,.ts,.js,.json --fix",
     "test": "jest"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/owenvip/ol-vue.git"
@@ -41,6 +41,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-typescript": "^7.12.7",
+    "@otools/compile-tools": "^0.0.15",
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.2.2",
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -62,7 +63,7 @@
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "vue": "^3.0.5"
+    "vue": "^3.2.21"
   },
   "engines": {
     "node": ">=12"
@@ -77,7 +78,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
