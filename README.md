@@ -17,5 +17,7 @@ npm i ol-vue
 
 ```js
 import olVue from 'ol-vue'
+import 'ol-vue/dist/base.css'
+
 app.use(olVue)
 ```
