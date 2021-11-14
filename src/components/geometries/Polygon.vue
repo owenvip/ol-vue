@@ -3,7 +3,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Polygon from 'ol/geom/Polygon';
 import useGeometry from '@/composables/useGeometry'
 

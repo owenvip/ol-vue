@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import LayerSwitcher from 'ol-ext/control/LayerSwitcher';
 import useControl from '@/composables/useControl'
 

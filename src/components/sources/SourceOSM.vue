@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import OSM from 'ol/source/OSM';
 import {
     inject,

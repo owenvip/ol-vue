@@ -162,7 +162,7 @@
 </ol-map>
 </template>
 
-<script>
+<script lang="ts">
 import {
     ref,
     inject,

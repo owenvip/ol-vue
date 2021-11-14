@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import useView from '@/composables/useView'
 
 export default {

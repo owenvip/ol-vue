@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Static from 'ol/source/ImageStatic';
 import Projection from 'ol/proj/Projection';
 

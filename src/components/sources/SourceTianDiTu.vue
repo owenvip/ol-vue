@@ -2,7 +2,7 @@
   <div v-if="false"></div>
 </template>
 
-<script>
+<script lang="ts">
 import WMTSSource from "ol/source/WMTS";
 import TileGridWMTS from "ol/tilegrid/WMTS";
 import { inject, watch, onMounted, onUnmounted, computed } from "vue";

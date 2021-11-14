@@ -4,7 +4,7 @@
 </slot>
 </template>
 
-<script>
+<script lang="ts">
 import {
     provide,
     inject,

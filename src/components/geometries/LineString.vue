@@ -3,7 +3,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import LineString from 'ol/geom/LineString';
 import useGeometry from '@/composables/useGeometry'
 

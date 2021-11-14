@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import WMTS from 'ol/source/WMTS';
 import Projection from 'ol/proj/Projection';
 import WMTSTileGrid from 'ol/tilegrid/WMTS';

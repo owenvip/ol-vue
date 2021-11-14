@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Fill from 'ol/style/Fill'
 
 import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'

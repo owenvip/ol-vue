@@ -3,7 +3,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import MultiPoint from 'ol/geom/MultiPoint';
 import useGeometry from '@/composables/useGeometry'
 

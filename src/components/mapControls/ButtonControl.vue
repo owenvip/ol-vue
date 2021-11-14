@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Button from 'ol-ext/control/Button'
 
 import useControl from '@/composables/useControl'

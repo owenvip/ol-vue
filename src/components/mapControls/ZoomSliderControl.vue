@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import useControl from '@/composables/useControl'
 import ZoomSlider from 'ol/control/ZoomSlider';
 

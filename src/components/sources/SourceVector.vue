@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import VectorSource from 'ol/source/Vector';
 
 import {

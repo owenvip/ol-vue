@@ -6,7 +6,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import useOverlay from "@/composables/useOverlay"
 export default {
     name: 'ol-overlay',

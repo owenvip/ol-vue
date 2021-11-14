@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Toggle from 'ol-ext/control/Toggle'
 
 import useControl from '@/composables/useControl'

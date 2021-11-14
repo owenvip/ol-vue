@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import BingMaps from 'ol/source/BingMaps';
 import {
     inject,

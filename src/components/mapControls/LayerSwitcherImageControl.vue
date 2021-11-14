@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import LayerSwitcherImage from 'ol-ext/control/LayerSwitcherImage';
 import useControl from '@/composables/useControl'
 import LayerSwitcherControl from './LayerSwitcherControl'

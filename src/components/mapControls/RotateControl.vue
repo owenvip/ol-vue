@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import useControl from '@/composables/useControl'
 import Rotate from 'ol/control/Rotate';
 

@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Zone from 'ol-ext/control/MapZone';
 import useControl from '@/composables/useControl'
 

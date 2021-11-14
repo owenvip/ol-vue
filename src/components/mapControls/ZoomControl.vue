@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Zoom from 'ol/control/Zoom';
 import useControl from '@/composables/useControl'
 

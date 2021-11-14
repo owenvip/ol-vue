@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Swipe from 'ol-ext/control/Swipe';
 import useControl from '@/composables/useControl'
 import {

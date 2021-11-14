@@ -3,7 +3,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import MultiLineString from 'ol/geom/MultiLineString';
 import useGeometry from '@/composables/useGeometry'
 

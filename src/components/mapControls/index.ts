@@ -1,3 +1,9 @@
+/*
+ * @Descripttion: 
+ * @Author: OwenWong
+ * @Email: owen.cq.cn@gmail.com
+ * @Date: 2021-11-12 16:47:59
+ */
 import FullScreenControl from './FullScreenControl.vue'
 import MousePositionControl from './MousePositionControl.vue'
 import AttributionControl from './AttributionControl.vue'
@@ -12,8 +18,6 @@ import SwipeControl from './SwipeControl.vue'
 import ControlBar from './ControlBar.vue'
 import ToggleControl from './ToggleControl.vue'
 import ButtonControl from './ButtonControl.vue'
-import PrintDialog from './PrintDialog.vue'
-import VideoRecorderControl from './VideoRecorderControl.vue'
 import LayerSwitcherControl from './LayerSwitcherControl.vue'
 import LayerSwitcherImageControl from './LayerSwitcherImageControl.vue'
 import ZoneControl from './ZoneControl.vue'
@@ -39,8 +43,6 @@ function install (app) {
     app.component(ControlBar.name, ControlBar)
     app.component(ToggleControl.name, ToggleControl)
     app.component(ButtonControl.name, ButtonControl)
-    app.component(PrintDialog.name, PrintDialog)
-    app.component(VideoRecorderControl.name, VideoRecorderControl)
     app.component(LayerSwitcherControl.name, LayerSwitcherControl)
     app.component(LayerSwitcherImageControl.name, LayerSwitcherImageControl)
     app.component(ZoneControl.name, ZoneControl)
@@ -63,8 +65,6 @@ function install (app) {
     ControlBar,
     ToggleControl,
     ButtonControl,
-    PrintDialog,
-    VideoRecorderControl,
     LayerSwitcherControl,
     LayerSwitcherImageControl,
     ZoneControl

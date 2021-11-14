@@ -4,7 +4,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import Stroke from 'ol/style/Stroke'
 
 import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'

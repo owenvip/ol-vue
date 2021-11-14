@@ -2,7 +2,7 @@
 <slot></slot>
 </template>
 
-<script>
+<script lang="ts">
 import FeatureAnimation from './FeatureAnimation';
 import Teleport from 'ol-ext/featureanimation/Teleport';
 import useAnimation from "@/composables/useAnimation";
