@@ -6,7 +6,8 @@
  */
 import { createApp } from 'vue'
 import Dev from './serve.vue'
-import openlayers from '../dist/ol-vue'
+import openlayers from 'ol-vue'
+import 'ol-vue/dist/base.css'
 
 const app = createApp(Dev)
 

@@ -6,7 +6,7 @@
   "browser": "dist/ol-vue.js",
   "module": "dist/ol-vue.js",
   "unpkg": "dist/ol-vue.min.js",
-  "types": "ol-vue.d.ts",
+  "types": "dist/ol-vue.d.ts",
   "files": [
     "dist/*"
   ],
@@ -63,8 +63,8 @@
     "rollup-plugin-vue": "^6.0.0"
   },
   "peerDependencies": {
-    "vue": "^3.2.21",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "vue": "^3.2.21"
   },
   "engines": {
     "node": ">=12"
