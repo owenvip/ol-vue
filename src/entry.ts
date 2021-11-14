@@ -19,6 +19,7 @@ import {
 
 import 'ol/ol.css'
 import 'ol-ext/dist/ol-ext.css'
+import './styles/base.css'
 
 import 'ol-contextmenu/dist/ol-contextmenu.css'
 

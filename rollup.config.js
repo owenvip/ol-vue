@@ -7,7 +7,9 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import babel from '@rollup/plugin-babel'
+import css from 'rollup-plugin-css-only'
 import PostCSS from 'rollup-plugin-postcss'
+import copy from 'rollup-plugin-copy'
 import { terser } from 'rollup-plugin-terser'
 import minimist from 'minimist'
 
@@ -25,7 +27,7 @@ const babelPresetEnvConfig = require('./babel.config').presets.filter(
 
 const argv = minimist(process.argv.slice(2))
 
-const projectRoot = path.resolve(__dirname, '..')
+const projectRoot = path.resolve(__dirname, '.')
 
 const baseConfig = {
   input: 'src/entry.ts',
@@ -49,6 +51,9 @@ const baseConfig = {
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
       }),
+      css({
+        output: 'base.css',
+      }),
       // Process only `<style module>` blocks.
       PostCSS({
         modules: {
@@ -59,6 +64,9 @@ const baseConfig = {
       // Process all `<style>` blocks except `<style module>`.
       PostCSS({ include: /(?<!&module=.*)\.css$/ }),
       commonjs(),
+      copy({
+        targets: [{ src: ['src/types/*'], dest: 'dist' }],
+      }),
     ],
     babel: {
       exclude: 'node_modules/**',
@@ -92,7 +100,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.ts',
     external,
     output: {
-      file: 'dist/ol-vue.esm.js',
+      file: 'dist/ol-vue.js',
       format: 'esm',
       exports: 'named',
     },
