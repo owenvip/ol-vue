@@ -1,3 +1,9 @@
+/*
+ * @Descripttion:
+ * @Author: OwenWong
+ * @Email: owen.cq.cn@gmail.com
+ * @Date: 2021-11-12 16:47:59
+ */
 import SourceXYZ from './SourceXYZ.vue'
 import SourceOSM from './SourceOSM.vue'
 import SourceImageStatic from './SourceImageStatic.vue'
@@ -8,35 +14,34 @@ import SourceBingMaps from './SourceBingMaps.vue'
 import SourceTianDiTu from './SourceTianDiTu.vue'
 import SourceImageWMS from './SourceImageWMS.vue'
 
-function install (app) {
-
-    if (install.installed) {
-      return
-    }
-
-    install.installed = true
-  
-    app.component(SourceXYZ.name, SourceXYZ)
-    app.component(SourceOSM.name, SourceOSM)
-    app.component(SourceImageStatic.name, SourceImageStatic)
-    app.component(SourceWMTS.name, SourceWMTS)
-    app.component(SourceVector.name, SourceVector)
-    app.component(SourceCluster.name, SourceCluster)
-    app.component(SourceBingMaps.name, SourceBingMaps)
-    app.component(SourceTianDiTu.name, SourceTianDiTu)
-    app.component(SourceImageWMS.name, SourceImageWMS)
+function install(app) {
+  if (install.installed) {
+    return
   }
-  
-  export default install
-  
-  export {
-    install,
-    SourceXYZ,
-    SourceOSM,
-    SourceImageStatic,
-    SourceWMTS,
-    SourceVector,
-    SourceCluster,
-    SourceTianDiTu,
-    SourceImageWMS,
-  }
+
+  install.installed = true
+
+  app.component(SourceXYZ.name, SourceXYZ)
+  app.component(SourceOSM.name, SourceOSM)
+  app.component(SourceImageStatic.name, SourceImageStatic)
+  app.component(SourceWMTS.name, SourceWMTS)
+  app.component(SourceVector.name, SourceVector)
+  app.component(SourceCluster.name, SourceCluster)
+  app.component(SourceBingMaps.name, SourceBingMaps)
+  app.component(SourceTianDiTu.name, SourceTianDiTu)
+  app.component(SourceImageWMS.name, SourceImageWMS)
+}
+
+export default install
+
+export {
+  install,
+  SourceXYZ,
+  SourceOSM,
+  SourceImageStatic,
+  SourceWMTS,
+  SourceVector,
+  SourceCluster,
+  SourceTianDiTu,
+  SourceImageWMS,
+}
