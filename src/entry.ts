@@ -31,6 +31,13 @@ import * as selectconditions from 'ol/events/condition'
 import * as extent from 'ol/extent'
 import * as animations from 'ol/easing'
 
+export { default as useAnimation } from '@/composables/useAnimation'
+export { default as useControl } from '@/composables/useControl'
+export { default as useGeometry } from '@/composables/useGeometry'
+export { default as useOverlay } from '@/composables/useOverlay'
+export { default as usePropsAsObjectProperties } from '@/composables/usePropsAsObjectProperties'
+export { default as useView } from '@/composables/useView'
+
 export default function install(app: App) {
   app.use(Map)
   app.use(Layers)

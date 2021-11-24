@@ -1,99 +1,85 @@
 <template lang="">
-<div>
+  <div>
     <slot></slot>
-</div>
+  </div>
 </template>
 
 <script lang="ts">
-import {
-    inject,
-    provide,
-    onUnmounted,
-    onMounted,
-    watch
-} from 'vue'
+import { inject, provide, onUnmounted, onMounted, watch } from 'vue'
 
-import ImageLayer from 'ol/layer/Image';
+import ImageLayer from 'ol/layer/Image'
 import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
 export default {
-    name: 'ol-image-layer',
-    setup(props) {
-        const map = inject('map');
-        const {
-            properties
-        } = usePropsAsObjectProperties(props);
+  name: 'ol-image-layer',
+  setup(props) {
+    const map = inject('map')
+    const { properties } = usePropsAsObjectProperties(props)
 
-        const imageLayer = new ImageLayer(properties);
+    const imageLayer = new ImageLayer(properties)
 
-        watch(properties, () => {
-            imageLayer.setProperties(properties);
-        });
+    watch(properties, () => {
+      imageLayer.setProperties(properties)
+    })
 
-        onMounted(() => {
-            map.addLayer(imageLayer);
-        });
+    onMounted(() => {
+      map.addLayer(imageLayer)
+    })
 
-        onUnmounted(() => {
-            map.removeLayer(imageLayer)
-        });
+    onUnmounted(() => {
+      map.removeLayer(imageLayer)
+    })
 
-        provide('imageLayer', imageLayer);
+    provide('imageLayer', imageLayer)
 
-        return {
-            imageLayer
-        }
-    },
-    props: {
-        className: {
-            type: String,
-            default: 'ol-layer'
-        },
-        opacity: {
-            type: Number,
-            default: 1
-        },
-        visible: {
-            type: Boolean,
-            default: true
-        },
-        extent: {
-            type: Array
-        },
-        zIndex: {
-            type: Number
-        },
-        minResolution: {
-            type: Number
-        },
-        maxResolution: {
-            type: Number
-        },
-        minZoom: {
-            type: Number
-        },
-        maxZoom: {
-            type: Number
-        },
-        title: {
-            type: String,
-
-        },
-        name: {
-            type: String,
-
-        },
-        preview: {
-            type: String,
-
-        },
-        baseLayer: {
-            type: Boolean,
-
-        },
+    return {
+      imageLayer,
     }
+  },
+  props: {
+    className: {
+      type: String,
+      default: 'ol-layer',
+    },
+    opacity: {
+      type: Number,
+      default: 1,
+    },
+    visible: {
+      type: Boolean,
+      default: true,
+    },
+    extent: {
+      type: Array,
+    },
+    zIndex: {
+      type: Number,
+    },
+    minResolution: {
+      type: Number,
+    },
+    maxResolution: {
+      type: Number,
+    },
+    minZoom: {
+      type: Number,
+    },
+    maxZoom: {
+      type: Number,
+    },
+    title: {
+      type: String,
+    },
+    name: {
+      type: String,
+    },
+    preview: {
+      type: String,
+    },
+    baseLayer: {
+      type: Boolean,
+    },
+  },
 }
 </script>
 
-<style lang="">
-
-</style>
+<style lang=""></style>

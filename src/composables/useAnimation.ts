@@ -1,3 +1,9 @@
+/*
+ * @Descripttion:
+ * @Author: OwenWong
+ * @Email: owen.cq.cn@gmail.com
+ * @Date: 2021-11-12 16:47:59
+ */
 import { provide, computed } from 'vue'
 import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
 import Animation from '@/components/animations/FeatureAnimation'

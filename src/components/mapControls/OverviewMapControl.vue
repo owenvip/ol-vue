@@ -1,85 +1,72 @@
 <template lang="">
-<div>
+  <div>
     <slot></slot>
-</div>
+  </div>
 </template>
 
 <script lang="ts">
-import {
-    OverviewMap
-} from 'ol/control';
+import { OverviewMap } from 'ol/control'
 import useControl from '@/composables/useControl'
-import {
-    provide,
-    inject,
-    onMounted,
-    onUnmounted
-} from 'vue'
+import { provide, inject, onMounted, onUnmounted } from 'vue'
 export default {
-    name: 'ol-overviewmap-control',
-    setup(props,context) {
+  name: 'ol-overviewmap-control',
+  setup(props, context) {
+    const map = inject('map')
 
-        const map = inject('map');
+    const { control } = useControl(OverviewMap, props, context)
 
-        const {
-            control
-        } = useControl(OverviewMap, props,context);
+    onMounted(() => {
+      control.value.setMap(map)
+    })
 
-        onMounted(() => {
-            control.value.setMap(map);
-        });
+    onUnmounted(() => {
+      control.value.setMap(null)
+    })
 
-        onUnmounted(() => {
-            control.value.setMap(null);
-        });
+    provide('overviewMap', control)
 
-        provide("overviewMap", control)
-
-        return {
-            control,
-        }
-
-    },
-    props: {
-        className: {
-            type: String,
-            default: 'ol-overviewmap'
-        },
-        collapsed: {
-            type: Boolean,
-            default: true
-        },
-        collapseLabel: {
-            type: String,
-            default: '«'
-        },
-        collapsible: {
-            type: Boolean,
-            default: true
-        },
-        label: {
-            type: String,
-            default: '»'
-        },
-        render: {
-            type: Function,
-        },
-        rotateWithView: {
-            type: Boolean,
-            default: false
-        },
-        target: {
-            type: HTMLElement,
-        },
-
-        tipLabel: {
-            type: String,
-            default: 'Overview map'
-        },
+    return {
+      control,
     }
+  },
+  props: {
+    className: {
+      type: String,
+      default: 'ol-overviewmap',
+    },
+    collapsed: {
+      type: Boolean,
+      default: true,
+    },
+    collapseLabel: {
+      type: String,
+      default: '«',
+    },
+    collapsible: {
+      type: Boolean,
+      default: true,
+    },
+    label: {
+      type: String,
+      default: '»',
+    },
+    render: {
+      type: Function,
+    },
+    rotateWithView: {
+      type: Boolean,
+      default: false,
+    },
+    target: {
+      type: HTMLElement,
+    },
+
+    tipLabel: {
+      type: String,
+      default: 'Overview map',
+    },
+  },
 }
 </script>
 
-<style lang="">
-
-</style>
+<style lang=""></style>

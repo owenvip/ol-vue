@@ -41,6 +41,22 @@
             :width="20"
           />
         </ol-feature>
+        <ol-animation-path
+          v-if="animationPath"
+          :path="animationPath.feature"
+          :duration="4000"
+          :repeat="10"
+        >
+          <ol-feature>
+            <ol-geom-point :coordinates="path[0]"></ol-geom-point>
+            <ol-style>
+              <ol-style-circle :radius="10">
+                <ol-style-fill color="blue"></ol-style-fill>
+                <ol-style-stroke color="blue" :width="2"></ol-style-stroke>
+              </ol-style-circle>
+            </ol-style>
+          </ol-feature>
+        </ol-animation-path>
       </ol-source-vector>
     </ol-vector-layer>
   </ol-map>
@@ -56,6 +72,7 @@ export default defineComponent({
     const projection = ref('EPSG:4326')
     const zoom = ref(6)
     const rotation = ref(0)
+    const animationPath = ref(null) as any
     const path = ref([
       [25.6064453125, 44.73302734375001],
       [27.759765625, 44.75500000000001],
@@ -70,6 +87,7 @@ export default defineComponent({
       zoom,
       rotation,
       path,
+      animationPath,
     }
   },
 })
