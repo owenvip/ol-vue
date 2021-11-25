@@ -19,7 +19,7 @@ export interface TrackPlayParams {
   callback: () => void
 }
 
-export default function drawAnimatedLine(
+export default function trackPlay(
   parmas: TrackPlayParams,
   coordinates: Coordinate[]
 ) {
@@ -34,7 +34,7 @@ export default function drawAnimatedLine(
     const ivlDraw = setInterval(function () {
       if (i > step) {
         clearInterval(ivlDraw)
-        drawAnimatedLine(parmas, coordinates)
+        trackPlay(parmas, coordinates)
       }
       const newEndCoord = [
         startCoord[0] + i * directionX,
