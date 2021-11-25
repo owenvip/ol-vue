@@ -1,7 +1,7 @@
 {
   "name": "ol-vue",
-  "version": "0.0.4",
-  "description": "openLayers for vue next",
+  "version": "0.0.5",
+  "description": "openLayers for vue ne sxt",
   "main": "dist/ol-vue.js",
   "browser": "dist/ol-vue.js",
   "module": "dist/ol-vue.js",
