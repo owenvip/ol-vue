@@ -6,7 +6,7 @@
 import Icon from 'ol/style/Icon'
 
 import { inject, watch, onMounted, onUnmounted, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-style-icon',

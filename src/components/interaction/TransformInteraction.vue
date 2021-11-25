@@ -13,7 +13,7 @@ import { provide, inject, watch, onMounted, onUnmounted, computed } from 'vue'
 
 import Transform from 'ol-ext/interaction/Transform'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-interaction-transform',

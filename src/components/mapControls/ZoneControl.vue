@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import Zone from 'ol-ext/control/MapZone'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-zone-control',

@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import Polygon from 'ol/geom/Polygon'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-polygon',

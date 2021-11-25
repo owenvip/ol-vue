@@ -20,7 +20,7 @@
 <script lang="ts">
 import { watch, computed, ref } from 'vue'
 import Geolocation from 'ol/Geolocation'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default {
   name: 'ol-geolocation',
   emits: [

@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import useView from '@/composables/useView'
+import useView from '@/hooks/useView'
 
 export default {
   name: 'ol-view',

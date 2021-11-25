@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { OverviewMap } from 'ol/control'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 import { provide, inject, onMounted, onUnmounted } from 'vue'
 export default {
   name: 'ol-overviewmap-control',

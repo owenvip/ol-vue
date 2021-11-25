@@ -8,7 +8,7 @@
 import { inject, provide, onUnmounted, onMounted, watch } from 'vue'
 
 import ImageLayer from 'ol/layer/Image'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default {
   name: 'ol-image-layer',
   setup(props) {

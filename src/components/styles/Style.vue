@@ -16,7 +16,7 @@ import { provide, inject, watch, onUnmounted, onMounted, computed } from 'vue'
 import Style from 'ol/style/Style'
 import Draw from 'ol/interaction/Draw'
 import Modify from 'ol/interaction/Modify'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-style',

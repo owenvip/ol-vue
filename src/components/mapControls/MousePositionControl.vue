@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { MousePosition } from 'ol/control'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-mouseposition-control',

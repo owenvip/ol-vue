@@ -5,7 +5,7 @@
 <script lang="ts">
 import ContextMenu from 'ol-contextmenu'
 
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-context-menu',

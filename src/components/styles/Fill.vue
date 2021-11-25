@@ -5,7 +5,7 @@
 <script lang="ts">
 import Fill from 'ol/style/Fill'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 import { inject, watch, onMounted, onUnmounted } from 'vue'
 export default {

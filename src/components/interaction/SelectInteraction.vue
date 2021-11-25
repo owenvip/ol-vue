@@ -7,7 +7,7 @@ import { provide, inject, watch, onMounted, onUnmounted, computed } from 'vue'
 
 import Select from 'ol/interaction/Select'
 import Style from 'ol/style/Style'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 import Collection from 'ol/Collection'
 export default {
   name: 'ol-interaction-select',

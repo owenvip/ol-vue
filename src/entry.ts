@@ -31,12 +31,14 @@ import * as selectconditions from 'ol/events/condition'
 import * as extent from 'ol/extent'
 import * as animations from 'ol/easing'
 
-export { default as useAnimation } from '@/composables/useAnimation'
-export { default as useControl } from '@/composables/useControl'
-export { default as useGeometry } from '@/composables/useGeometry'
-export { default as useOverlay } from '@/composables/useOverlay'
-export { default as usePropsAsObjectProperties } from '@/composables/usePropsAsObjectProperties'
-export { default as useView } from '@/composables/useView'
+import useAnimation from '@/hooks/useAnimation'
+import useControl from '@/hooks/useControl'
+import useGeometry from '@/hooks/useGeometry'
+import useOverlay from '@/hooks/useOverlay'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
+import useView from '@/hooks/useView'
+
+import trackPlay from '@/utils/trackPlay'
 
 export default function install(app: App) {
   app.use(Map)
@@ -57,4 +59,19 @@ export default function install(app: App) {
   app.provide('ol-extent', extent)
 }
 
-export { install, Map, Layers, Sources, MapControls, Geometries, Styles }
+export {
+  install,
+  Map,
+  Layers,
+  Sources,
+  MapControls,
+  Geometries,
+  Styles,
+  usePropsAsObjectProperties,
+  useAnimation,
+  useControl,
+  useGeometry,
+  useOverlay,
+  useView,
+  trackPlay,
+}

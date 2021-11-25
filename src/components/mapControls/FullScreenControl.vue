@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { FullScreen } from 'ol/control'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-fullscreen-control',

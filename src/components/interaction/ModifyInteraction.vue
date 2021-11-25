@@ -16,7 +16,7 @@ import {
 import Collection from 'ol/Collection'
 import Modify from 'ol/interaction/Modify'
 //import Style from 'ol/style/Style';
-//import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+//import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-interaction-modify',

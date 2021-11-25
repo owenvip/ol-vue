@@ -6,7 +6,7 @@
 import { provide, inject, watch, onMounted, onUnmounted, computed } from 'vue'
 import Feature from 'ol/Feature'
 import Geometry from 'ol/geom/Geometry'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default {
   name: 'ol-feature',
   setup(props) {

@@ -6,7 +6,7 @@
 import WMTSSource from 'ol/source/WMTS'
 import TileGridWMTS from 'ol/tilegrid/WMTS'
 import { inject, watch, onMounted, onUnmounted, computed } from 'vue'
-import usePropsAsObjectProperties from '../../composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '../../hooks/usePropsAsObjectProperties'
 
 export class Tianditu extends WMTSSource {
   constructor(opt_options) {

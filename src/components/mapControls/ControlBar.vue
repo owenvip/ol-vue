@@ -11,7 +11,7 @@
 <script lang="ts">
 import Bar from 'ol-ext/control/Bar'
 
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 import { provide } from 'vue'
 export default {
   name: 'ol-control-bar',

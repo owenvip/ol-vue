@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import MultiPolygon from 'ol/geom/MultiPolygon'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-multi-polygon',

@@ -16,7 +16,7 @@ import { Cluster } from 'ol/source'
 import { easeOut } from 'ol/easing'
 
 import AnimatedCluster from 'ol-ext/layer/AnimatedCluster'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-animated-clusterlayer',

@@ -13,7 +13,7 @@ import { inject, watch, onMounted, onUnmounted, computed } from 'vue'
 
 import DragRotateAndZoom from 'ol/interaction/DragRotateAndZoom'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-interaction-dragrotatezoom',

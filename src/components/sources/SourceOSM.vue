@@ -11,7 +11,7 @@
 <script lang="ts">
 import OSM from 'ol/source/OSM'
 import { inject, watch, onMounted, onUnmounted, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-source-osm',

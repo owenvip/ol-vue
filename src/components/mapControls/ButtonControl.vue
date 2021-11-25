@@ -11,7 +11,7 @@
 <script lang="ts">
 import Button from 'ol-ext/control/Button'
 
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 export default {
   name: 'ol-control-button',
   setup(props, context) {

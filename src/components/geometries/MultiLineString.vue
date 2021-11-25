@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import MultiLineString from 'ol/geom/MultiLineString'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-multi-line-string',

@@ -8,7 +8,7 @@
 import { inject, provide, onUnmounted, onMounted, watch, computed } from 'vue'
 
 import TileLayer from 'ol/layer/Tile'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default {
   name: 'ol-tile-layer',
   setup(props) {

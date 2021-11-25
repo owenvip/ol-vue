@@ -5,7 +5,7 @@
 <script lang="ts">
 import Stroke from 'ol/style/Stroke'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 import { inject, watch, onMounted, onUnmounted } from 'vue'
 

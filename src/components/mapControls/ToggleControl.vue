@@ -5,7 +5,7 @@
 <script lang="ts">
 import Toggle from 'ol-ext/control/Toggle'
 
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 export default {
   name: 'ol-control-toggle',
   setup(props, context) {

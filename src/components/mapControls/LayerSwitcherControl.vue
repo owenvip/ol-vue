@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import LayerSwitcher from 'ol-ext/control/LayerSwitcher'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-layerswitcher-control',

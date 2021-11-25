@@ -15,7 +15,7 @@ import {
   computed,
 } from 'vue'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default function useOverlay(props, emit) {
   const map = inject('map')
 

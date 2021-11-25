@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import LayerSwitcherImage from 'ol-ext/control/LayerSwitcherImage'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 import LayerSwitcherControl from './LayerSwitcherControl'
 export default {
   name: 'ol-layerswitcherimage-control',

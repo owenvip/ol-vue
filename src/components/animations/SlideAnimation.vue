@@ -5,7 +5,7 @@
 <script lang="ts">
 import FeatureAnimation from './FeatureAnimation'
 import Slide from 'ol-ext/featureanimation/Slide'
-import useAnimation from '@/composables/useAnimation'
+import useAnimation from '@/hooks/useAnimation'
 export default {
   name: 'ol-animation-slide',
   extends: FeatureAnimation,

@@ -16,7 +16,7 @@ import { inject, watch, onUnmounted, onMounted, computed } from 'vue'
 import FlowLine from 'ol-ext/style/FlowLine'
 import Draw from 'ol/interaction/Draw'
 import Modify from 'ol/interaction/Modify'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-style-flowline',

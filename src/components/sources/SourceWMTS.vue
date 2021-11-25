@@ -9,7 +9,7 @@ import WMTSTileGrid from 'ol/tilegrid/WMTS'
 import { get as getProjection } from 'ol/proj'
 import { getTopLeft, getWidth } from 'ol/extent'
 import { inject, onMounted, onUnmounted, watch, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 export default {
   name: 'ol-source-wmts',
   setup(props) {

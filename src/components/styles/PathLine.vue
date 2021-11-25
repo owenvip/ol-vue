@@ -15,7 +15,7 @@ import Draw from 'ol/interaction/Draw'
 import { LineString, Point } from 'ol/geom'
 import { Style, Icon, Stroke } from 'ol/style'
 import Modify from 'ol/interaction/Modify'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-style-pathline',

@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import LineString from 'ol/geom/LineString'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-line-string',

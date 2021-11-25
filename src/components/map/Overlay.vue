@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import useOverlay from '@/composables/useOverlay'
+import useOverlay from '@/hooks/useOverlay'
 export default {
   name: 'ol-overlay',
   setup(props, { emit }) {

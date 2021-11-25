@@ -8,7 +8,7 @@
 import { inject, provide, onUnmounted, onMounted, watch, computed } from 'vue'
 
 import VectorLayer from 'ol/layer/Vector'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-vector-layer',

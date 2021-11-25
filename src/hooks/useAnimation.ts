@@ -5,7 +5,7 @@
  * @Date: 2021-11-12 16:47:59
  */
 import { provide, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 import Animation from '@/components/animations/FeatureAnimation'
 
 export default function useAnimation(AnimationType, props) {

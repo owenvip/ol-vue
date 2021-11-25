@@ -2,7 +2,7 @@ import { inject, watch, onMounted } from 'vue'
 import Projection from 'ol/proj/Projection'
 import View from 'ol/View'
 
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default function useView(props, emit) {
   const map = inject('map')

@@ -8,7 +8,7 @@
 import { ref, provide, onMounted, onUnmounted, watch } from 'vue'
 
 import Map from 'ol/Map'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-map',

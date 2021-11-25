@@ -6,7 +6,7 @@
 import { inject, watch, onMounted, onUnmounted } from 'vue'
 
 import Snap from 'ol/interaction/Snap'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-interaction-snap',

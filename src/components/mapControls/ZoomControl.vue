@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Zoom from 'ol/control/Zoom'
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 export default {
   name: 'ol-zoom-control',

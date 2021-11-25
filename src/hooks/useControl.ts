@@ -1,5 +1,5 @@
 import { inject, onMounted, onUnmounted, watch, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default function useControl(ControlType, props, context) {
   const map = inject('map')

@@ -11,7 +11,7 @@
 <script lang="ts">
 import BingMaps from 'ol/source/BingMaps'
 import { inject, watch, onMounted, onUnmounted, computed } from 'vue'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-source-bingmaps',

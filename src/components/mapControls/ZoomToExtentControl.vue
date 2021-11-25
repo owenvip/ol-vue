@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 
 import ZoomToExtent from 'ol/control/ZoomToExtent'
 

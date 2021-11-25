@@ -7,7 +7,7 @@ import { provide, inject, watch, onMounted, onUnmounted, computed } from 'vue'
 
 import Select from 'ol-ext//interaction/SelectCluster'
 import Style from 'ol/style/Style'
-import usePropsAsObjectProperties from '@/composables/usePropsAsObjectProperties'
+import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
 export default {
   name: 'ol-interaction-clusterselect',

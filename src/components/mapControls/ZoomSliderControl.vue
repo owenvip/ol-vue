@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import useControl from '@/composables/useControl'
+import useControl from '@/hooks/useControl'
 import ZoomSlider from 'ol/control/ZoomSlider'
 
 export default {

@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import MultiPoint from 'ol/geom/MultiPoint'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-multi-point',

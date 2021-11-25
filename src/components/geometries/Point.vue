@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Point from 'ol/geom/Point'
-import useGeometry from '@/composables/useGeometry'
+import useGeometry from '@/hooks/useGeometry'
 
 export default {
   name: 'ol-geom-point',
