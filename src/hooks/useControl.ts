@@ -1,3 +1,9 @@
+/*
+ * @Descripttion:
+ * @Author: OwenWong
+ * @Email: owen.cq.cn@gmail.com
+ * @Date: 2021-11-12 16:47:59
+ */
 import { inject, onMounted, onUnmounted, watch, computed } from 'vue'
 import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 
@@ -48,7 +54,7 @@ export default function useControl(ControlType, props, context) {
   })
 
   onUnmounted(() => {
-    if (parent.removeControl) {
+    if (parent && parent.removeControl) {
       parent.removeControl(control.value)
     } else {
       // ol-ext controls
