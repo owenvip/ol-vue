@@ -28,7 +28,7 @@ export default function useControl(ControlType, props, context) {
   )
 
   watch(control, (newVal, oldVal) => {
-    if (parent.removeControl) {
+    if (parent && parent.removeControl) {
       parent.removeControl(oldVal)
       parent.addControl(newVal)
       map.changed()
