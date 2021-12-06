@@ -48,7 +48,11 @@ export default function trackPlay(
       feature.setStyle(style)
       source.addFeature(feature)
       if (tempFeature) {
-        source.removeFeature(tempFeature)
+        try {
+          source.removeFeature(tempFeature)
+        } catch (err) {
+          // silence
+        }
       }
       tempFeature = feature
       i++

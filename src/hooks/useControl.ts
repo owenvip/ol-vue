@@ -54,15 +54,17 @@ export default function useControl(ControlType, props, context) {
   })
 
   onUnmounted(() => {
-    if (parent && parent.removeControl) {
-      parent.removeControl(control.value)
-    } else {
-      // ol-ext controls
-      let index = parent.controls_.findIndex((a) => a == control.value)
-      parent.controls_.splice(index, 1)
-      control.value.dispose()
+    if (parent) {
+      if (parent.removeControl) {
+        parent.removeControl(control.value)
+      } else {
+        // ol-ext controls
+        let index = parent.controls_.findIndex((a) => a == control.value)
+        parent.controls_.splice(index, 1)
+        control.value.dispose()
+      }
+      map.changed()
     }
-    map.changed()
   })
 
   return {
