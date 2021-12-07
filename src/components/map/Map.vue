@@ -1,3 +1,9 @@
+<!--
+ * @Descripttion: 
+ * @Author: OwenWong
+ * @Email: owen.cq.cn@gmail.com
+ * @Date: 2021-11-12 16:47:59
+-->
 <template lang="">
   <div :ref="(el) => (mapRef = el)">
     <slot></slot>
@@ -55,6 +61,7 @@ export default {
     map.on('postrender', (event) => emit('postrender', event))
     map.on('precompose', (event) => emit('precompose', event))
     map.on('postcompose', (event) => emit('postcompose', event))
+    map.on('rendercomplete', (event) => emit('rendercomplete', event))
 
     return {
       map,

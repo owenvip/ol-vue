@@ -39,6 +39,7 @@ import usePropsAsObjectProperties from '@/hooks/usePropsAsObjectProperties'
 import useView from '@/hooks/useView'
 
 import trackPlay from '@/utils/trackPlay'
+import changeZhUnits from '@/utils/changeZhUnits'
 
 export default function install(app: App) {
   app.use(Map)
@@ -74,4 +75,5 @@ export {
   useOverlay,
   useView,
   trackPlay,
+  changeZhUnits,
 }
